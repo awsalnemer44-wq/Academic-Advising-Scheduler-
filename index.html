@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Academic Advising Scheduler</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Academic Advising Scheduler</h1>
+
+    <p>Welcome to the Academic Advising Scheduler.</p>
+<h2>Book an Advising Appointment</h2>
+
+<label for="studentName">Student Name:</label>
+<input type="text" id="studentName">
+
+<br><br>
+
+<label for="advisor">Choose an Advisor:</label>
+<select id="advisor">
+    <option value="">-- Select Advisor --</option>
+    <option value="Dr. Sarah">Dr. Sarah</option>
+    <option value="Dr. Ahmed">Dr. Ahmed</option>
+    <option value="Dr. Lim">Dr. Lim</option>
+</select>
+<br><br>
+
+<label for="date">Appointment Date:</label>
+<input type="date" id="date">
+
+<br><br>
+
+<label for="time">Appointment Time:</label>
+<input type="time" id="time">
+
+<br><br>
+
+<button type="button" onclick="bookAppointment()">Book Appointment</button>
+<h2>My Appointments</h2>
+<input type="text" id="searchAppointment" placeholder="Search by student or advisor">
+<div id="appointmentList"></div>
+<h2>Security Notes</h2>
+
+<ul>
+    <li>Input validation is used to prevent empty appointment details.</li>
+    <li>Appointments are stored locally in the user's browser.</li>
+    <li>No passwords or sensitive personal information are stored.</li>
+    <li>The application is designed for demonstration purposes and does not use a server database.</li>
+</ul>
+<h2>Advisor View</h2>
+
+<div id="advisorView"></div>
+<script src="script.js"></script>
+
+</body>
+</html>
